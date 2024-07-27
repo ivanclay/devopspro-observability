@@ -15,4 +15,4 @@
 - [x] http://localhost:9216/metrics
 
 ### API metrics
--[x] http://localhost:8080/metrics
+- [x] http://localhost:8080/metrics
