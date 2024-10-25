@@ -7,7 +7,7 @@ services:
     networks:
       - pedelogo
     depends_on:
-      - pedelogo-mongo
+      - pedelogo-mongodb
     environment:
       Mongo__Host: "pedelogo-mongodb"
       Mongo__User: "mongouser"
@@ -15,7 +15,7 @@ services:
       Mongo__Port: "27017"
       Mongo__Database: "admin"
     
-  pedelogo-mongo:
+  pedelogo-mongodb:
     image: mongo:4.1
     networks:
       - pedelogo
@@ -30,7 +30,7 @@ services:
     networks:
       - pedelogo
     depends_on:
-      - pedelogo-mongo
+      - pedelogo-mongodb
     environment:
       MONGODB_URI: "mongodb://mongouser:mongopwd@pedelogo-mongodb:27017"
 

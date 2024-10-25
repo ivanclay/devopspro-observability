@@ -16,3 +16,8 @@
 
 ### API metrics
 - [x] http://localhost:8080/metrics
+
+
+### DOCKER
+#### REMOVER TODAS AS IMAGENS
+- docker rmi -f $(docker images -q)
