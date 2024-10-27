@@ -12,7 +12,7 @@ scrape_configs:
     scrape_interval: 5s
     scrape_timeout:  2s
     static_configs:
-      - targets: ['api:80']
+      - targets: ['api:80'] # NOME DO SERVICE DO COMPOSE
         labels:
           versao: "1.0"
   

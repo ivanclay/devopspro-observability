@@ -11,6 +11,9 @@
 ### Remover container
 - [x] docker container rm -f id-do-container
 
+### Remover todos os containers
+- [x] docker rm $(docker ps -a -q)
+
 ### Mongodb Exporter
 - [x] http://localhost:9216/metrics
 
@@ -21,3 +24,8 @@
 ### DOCKER
 #### REMOVER TODAS AS IMAGENS
 - docker rmi -f $(docker images -q)
+
+#### REMOVER TODOS OS VOLUMES
+- docker volume rm $(docker volume ls -q)
+- docker volume prune -f
+

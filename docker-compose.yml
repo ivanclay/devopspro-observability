@@ -22,6 +22,9 @@ services:
     environment:
       MONGO_INIT_ROOT_USERNAME: mongouser
       MONGO_INIT_ROOT_PASSWORD: mongopwd
+      # MONGO_INITDB_DATABASE: admin
+    ports:
+      - 27017:27017
 
   mongoexporter:
     image: fabricioveronez/mongo_exporter
